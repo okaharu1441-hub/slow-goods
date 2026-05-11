@@ -316,21 +316,16 @@
       position: relative;
     }
 
-    .item-thumb-inner {
+    .item-thumb img {
       width: 100%;
       height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
     }
 
-    /* placeholder art for each card */
-    .thumb-art {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background: var(--terracotta);
-      opacity: 0.25;
+    .item-card:hover .item-thumb img {
+      transform: scale(1.04);
     }
 
     .item-info {
@@ -551,17 +546,16 @@
     <div class="section-inner">
       <p class="section-label">items</p>
       <h2 class="section-title">アイテムのご紹介</h2>
-      <p class="section-lead">Tシャツ、トートバッグ、マグカップなど、SUZURIで販売中のアイテムをご覧ください。</p>
+      <p class="section-lead">Tシャツ、トートバッグ、パーカーなど、SUZURIで販売中のアイテムをご覧ください。</p>
 
       <div class="items-grid">
         <a class="item-card" href="https://suzuri.jp/bandai_nameko?utm_source=others&utm_medium=social&utm_campaign=shop_share" target="_blank" rel="noopener">
           <div class="item-thumb">
-            <div class="item-thumb-inner">
-              <div class="thumb-art" style="width:90px;height:90px;opacity:0.3;"></div>
-            </div>
+            <img src="https://dijsur42hqnz1.cloudfront.net/assets/items/t-shirt-94737287b64f8c4f3817af4df505cc7faab599f3cb4c2516db54359d2106889f.png"
+                 alt="スタンダードTシャツ" loading="lazy">
           </div>
           <div class="item-info">
-            <h3>T シャツ</h3>
+            <h3>スタンダードTシャツ</h3>
             <p>シンプルで着回しやすいデザイン。毎日のコーディネートに。</p>
             <span class="item-badge">→ SUZURI で見る</span>
           </div>
@@ -569,9 +563,8 @@
 
         <a class="item-card" href="https://suzuri.jp/bandai_nameko?utm_source=others&utm_medium=social&utm_campaign=shop_share" target="_blank" rel="noopener">
           <div class="item-thumb">
-            <div class="item-thumb-inner">
-              <div class="thumb-art" style="width:70px;height:70px;border-radius:4px;opacity:0.25;"></div>
-            </div>
+            <img src="https://dijsur42hqnz1.cloudfront.net/assets/items/tote-bag-70ab3d48098dd78a1f8d4cdde6a2374816357145b4eddd8b346f3bb7c4fc75d7.png"
+                 alt="トートバッグ" loading="lazy">
           </div>
           <div class="item-info">
             <h3>トートバッグ</h3>
@@ -582,13 +575,12 @@
 
         <a class="item-card" href="https://suzuri.jp/bandai_nameko?utm_source=others&utm_medium=social&utm_campaign=shop_share" target="_blank" rel="noopener">
           <div class="item-thumb">
-            <div class="item-thumb-inner">
-              <div class="thumb-art" style="width:75px;height:75px;border-radius:8px;opacity:0.2;"></div>
-            </div>
+            <img src="https://dijsur42hqnz1.cloudfront.net/assets/items/hoodie-3ef6c6518f655716152cf3eed825eaa4e318f1475992ea24d5920b9bc939d0c1.png"
+                 alt="パーカー" loading="lazy">
           </div>
           <div class="item-info">
-            <h3>マグカップ</h3>
-            <p>朝のコーヒータイムをちょっと特別な時間に。</p>
+            <h3>パーカー</h3>
+            <p>肌寒い季節にぴったり。ゆったりシルエットで着心地抜群。</p>
             <span class="item-badge">→ SUZURI で見る</span>
           </div>
         </a>
